@@ -38,7 +38,7 @@ module.exports = {
     value: '**z/role message** ~~-~~ mensaje al cual reaccionar\n**z/role channel** ~~-~~ canal para la reacción\n**z/role add** ~~-~~ añade un rol con un emoji\n**z/role del** ~~-~~ elimina un rol\n**z/role edit** ~~-~~ edita un mensaje enviado por Zira\n**z/role list** ~~-~~ muestra una lista de los roles usados\n**z/autorole** ~~-~~ da un rol a bots y usuarios al unirse\n**z/log** ~~-~~ registra cuando Zira otorge/remueva un rol\n\n**z/suggest** ~~-~~ envía una idea/sugerencia\n**z/info** ~~-~~ información sobre Zira\n**z/ping** ~~-~~ latencia de Zira\n**z/invite** ~~-~~ invita a Zira',
   }, {
     name: 'Enlaces',
-    value: '[Guía para configurar a Zira](https://demo.zira.pw)\n[Servidor de ayuda](https://zira.pw/support)\n[Dashboard de Zira](https://zira.pw)\n[Dona para mantener a Zira funcionando](https://www.patreon.com/HazedSPaCEx)'
+    value: '[Guía para configurar a Zira](https://demo.zira.pw)\n[Servidor de ayuda](https://zira.pw/support)\n[Dashboard de Zira](https://zira.pw)\n[Dona para mantener a Zira funcionando](https://www.patreon.com/HazedSPaCEx)\n[Traduce a Zira](https://github.com/HazedSPaCEx/Zira-Translations)'
   }],
   perm: {
     noPerm: 'Tienes que ser el dueño del servidor o tener el permiso `Administrar Roles` para usar estos comandos.',
