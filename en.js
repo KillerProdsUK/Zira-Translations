@@ -74,5 +74,11 @@ module.exports = {
     desc: "z/log #channel\n\nTo stop logging do z/log |reset",
     set: ["Log channel set to ", "\nNOTE: If Zira is not able to send to the channel, logging will be disabled."],
     reset: "I will no longer log to "
+  },
+  reset: {
+    noPerm: 'You need be the owner of the server to use this command.',
+    question: 'Are you sure you want to reset the server config?\n**EVERYTHING** setup through Zira will be reset.\n\n*yes or no*',
+    yes: 'Settings have been reset.',
+    no: 'Nothing has been reset.'
   }
 }
