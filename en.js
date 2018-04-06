@@ -2,7 +2,7 @@ module.exports = {
   title: 'Command Usage',
   titleError: 'Error :warning:',
   role: {
-    message: 'z/role message <messageID> ~~-~~ To use an existing message\nor\nz/role message <message to send> ~~-~~ To make the bot send and use the message you provided\n\nTo get a message ID, take a look at this:',
+    message: 'z/role message <messageID> ~~  ~~ To use an existing message\nor\nz/role message <message to send> ~~  ~~ To make the bot send and use the message you provided\n\nTo get a message ID, take a look at this:',
     messageUnableToSend: 'Unable to send message to <#',
     messageSetTitle: 'Message Set',
     messageSetDesc: 'Message set with the id of ',
@@ -35,7 +35,7 @@ module.exports = {
   },
   help: [{
     name: 'Commands',
-    value: '**z/role message** ~~-~~ message to react on\n**z/role channel** ~~-~~ channel for the reaction\n**z/role add** ~~-~~ add a role with an emoji\n**z/role del** ~~-~~ delete a role\n**z/role edit** ~~-~~ edit a message sent by Zira\n**z/role list** ~~-~~ list roles being used\n**z/autorole** ~~-~~ give users and bots a role on join\n**z/log** ~~-~~ log when Zira gives/takes a role\n\n**z/lang** ~~-~~ Set locale\n**z/suggest** ~~-~~ submit a suggestion/idea\n**z/info** ~~-~~ info about Zira\n**z/ping** ~~-~~ Zira\'s ping\n**z/invite** ~~-~~ invite Zira',
+    value: '**z/role message** ~~  ~~ message to react on\n**z/role channel** ~~  ~~ channel for the reaction\n**z/role add** ~~  ~~ add a role with an emoji\n**z/role del** ~~  ~~ delete a role\n**z/role edit** ~~  ~~ edit a message sent by Zira\n**z/role list** ~~  ~~ list roles being used\n**z/autorole** ~~  ~~ give users and bots a role on join\n**z/log** ~~  ~~ log when Zira gives/takes a role\n\n**z/lang** ~~  ~~ set locale\n**z/reset ~~  ~~ reset server settings\n**z/suggest** ~~  ~~ submit a suggestion/idea\n**z/info** ~~  ~~ info about Zira\n**z/ping** ~~  ~~ Zira\'s ping\n**z/invite** ~~  ~~ invite Zira',
   }, {
     name: 'Links',
     value: '[Guide to setup Zira](https://demo.zira.pw)\n[Support Server](https://zira.pw/support)\n[Zira\'s Dashboard](https://zira.pw)\n[Donate to keep Zira running](https://www.patreon.com/HazedSPaCEx)\n[Translate Zira](https://github.com/HazedSPaCEx/Zira-Translations)'
@@ -63,11 +63,11 @@ module.exports = {
     no: 'No',
     notsetup: 'Not setup',
     showTitle: 'Auto role config',
-    showEnable: 'Enabled ~~-~~ ',
-    showUser: 'User role ~~-~~ ',
-    showBot: 'Bot role ~~-~~ ',
+    showEnable: 'Enabled ~~  ~~ ',
+    showUser: 'User role ~~  ~~ ',
+    showBot: 'Bot role ~~  ~~ ',
     helpTitle: 'Auto role commands',
-    helpDesc: `z/autorole toggle ~~-~~ Enable or disable auto roles\nz/autorole user ~~-~~ Set the user's role\nz/autorole bot ~~-~~ Set the bot's role\nz/autorole show ~~-~~ Shows the config`
+    helpDesc: `z/autorole toggle ~~  ~~ Enable or disable auto roles\nz/autorole user ~~  ~~ Set the user's role\nz/autorole bot ~~  ~~ Set the bot's role\nz/autorole show ~~  ~~ Shows the config`
   },
   log: {
     title: "Log Command",
