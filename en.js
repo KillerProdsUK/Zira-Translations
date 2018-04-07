@@ -35,7 +35,7 @@ module.exports = {
   },
   help: [{
     name: 'Commands',
-    value: '**z/role message** ~~  ~~ message to react on\n**z/role channel** ~~  ~~ channel for the reaction\n**z/role add** ~~  ~~ add a role with an emoji\n**z/role del** ~~  ~~ delete a role\n**z/role edit** ~~  ~~ edit a message sent by Zira\n**z/role list** ~~  ~~ list roles being used\n**z/autorole** ~~  ~~ give users and bots a role on join\n**z/log** ~~  ~~ log when Zira gives/takes a role\n\n**z/lang** ~~  ~~ set locale\n**z/reset ~~  ~~ reset server settings\n**z/suggest** ~~  ~~ submit a suggestion/idea\n**z/info** ~~  ~~ info about Zira\n**z/ping** ~~  ~~ Zira\'s ping\n**z/invite** ~~  ~~ invite Zira',
+    value: '**z/role message** ~~  ~~ message to react on\n**z/role channel** ~~  ~~ channel for the reaction\n**z/role add** ~~  ~~ add a role with an emoji\n**z/role del** ~~  ~~ delete a role\n**z/role edit** ~~  ~~ edit a message sent by Zira\n**z/role list** ~~  ~~ list roles being used\n**z/autorole** ~~  ~~ give users and bots a role on join\n**z/log** ~~  ~~ log when Zira gives/takes a role\n\n**z/lang** ~~  ~~ set locale\n**z/reset** ~~  ~~ reset server settings\n**z/suggest** ~~  ~~ submit a suggestion/idea\n**z/info** ~~  ~~ info about Zira\n**z/ping** ~~  ~~ Zira\'s ping\n**z/invite** ~~  ~~ invite Zira',
   }, {
     name: 'Links',
     value: '[Guide to setup Zira](https://demo.zira.pw)\n[Support Server](https://zira.pw/support)\n[Zira\'s Dashboard](https://zira.pw)\n[Donate to keep Zira running](https://www.patreon.com/HazedSPaCEx)\n[Translate Zira](https://github.com/HazedSPaCEx/Zira-Translations)'
