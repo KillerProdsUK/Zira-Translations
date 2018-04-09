@@ -35,7 +35,7 @@ module.exports = {
   },
   help: [{
     name: 'Commandes',
-    value: '**z/role message** ~~  ~~ message pour réagir dans\n**z/role channel** ~~  ~~ salon pour la réaction\n**z/role add** ~~  ~~ ajouter un rôle avec un émoji\n**z/role del** ~~  ~~ supprimer un role\n**z/role edit** ~~  ~~ modifier un message envoyé par Zira\n**z/role list** ~~  ~~ liste des rôles utilisés\n**z/autorole** ~~  ~~ donner aux utilisateurs et aux bots un rôle lorsqu\'ils rejoignent\n**z/log** ~~  ~~ enregister/log  quand Zira donne ou supprime un role\n\n**z/lang** ~~  ~~ Selectionner la langue\n**z/reset** ~~  ~~ Réinitialiser les paramètres du bot\n**z/info** ~~  ~~ informations à propos de Zira\n**z/ping** ~~  ~~ Affiche le ping de Zira\n**z/invite** ~~  ~~ Pour inviter Zira',
+    value: '**z/role message** ~~  ~~ message pour réagir dans\n**z/role channel** ~~  ~~ salon pour la réaction\n**z/role add** ~~  ~~ ajouter un rôle avec un émoji\n**z/role del** ~~  ~~ supprimer un role\n**z/role edit** ~~  ~~ modifier un message envoyé par Zira\n**z/role list** ~~  ~~ liste des rôles utilisés\n**z/autorole** ~~  ~~ donner aux utilisateurs et aux bots un rôle lorsqu\'ils rejoignent\n**z/log** ~~  ~~ enregister/log  quand Zira donne ou supprime un role\n\n**z/lang** ~~  ~~ Selectionner la langue\n**z/reset** ~~  ~~ Réinitialiser les paramètres du bot\n**z/info** ~~  ~~ informations à propos de Zira\n**z/faq** ~~  ~~ frequently asked questions\n**z/ping** ~~  ~~ Affiche le ping de Zira\n**z/invite** ~~  ~~ Pour inviter Zira',
   }, {
     name: 'Liens',
     value: '[Guide pour configurer Zira](https://demo.zira.pw)\n[Serveur d\'Aide](https://zira.pw/support)\n[Tableau de Bord de Zira](https://zira.pw)\n[N\'hésitez pas à faire des dons pour que Zira continue de fonctionner](https://www.patreon.com/HazedSPaCEx)\n[Translate Zira](https://github.com/HazedSPaCEx/Zira-Translations)'
@@ -80,5 +80,30 @@ module.exports = {
     question: 'Êtes vous sûr de vouloir réinitialiser la configuration du serveur ?\n**TOUTE** la configuration enregistrée de Zira sera réinitialisée.\n\n*oui ou non*',
     oui: 'La configuration a été réinitialisée.',
     non: 'La configuration n\'a pas été réinitialisée.'
+  },
+  faq: {
+    title: 'Frequently Asked Questions',
+    fields: [{
+      name: 'Zira doesn\'t send messages when I do any commands',
+      value: 'Make sure Zira has permission to embed links and send messages in the channel you are trying the commands in'
+    }, {
+      name: 'Zira says "Can\'t find a message with that ID" or "Unknown message ID" what do I do?',
+      value: 'Make sure that the message ID is in the channel you\'ve set and that Zira is able to read the channel'
+    }, {
+      name: 'Zira doesn\'t give roles even though I set it up and everything',
+      value: 'Make sure Zira has permission to manage roles and that the "Zira" role is above the roles you\'ve setup'
+    }, {
+      name: 'Is Zira able to remove emojis that don\'t have a corresponding role setup with them?',
+      value: 'Yes, allow Zira to manage messages in the channel you\'ve setup'
+    }, {
+      name: 'Is Zira able to handle more than one message?',
+      value: 'Yes, just set another message and add roles to that message'
+    }, {
+      name: 'Is Zira able to handle more than one channel?',
+      value: 'Yes, just set another channel, then message etc'
+    }, {
+      name: 'How many roles can be on one message?',
+      value: 'Discord has a max of 20 emojis per message so 20 roles'
+    }]
   }
 }
