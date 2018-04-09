@@ -5,14 +5,14 @@ module.exports = {
     message: 'z/role message <ID del mensaje> ~~  ~~ Para usar un mensaje existente\no\nz/role message <mensaje a enviar> ~~  ~~ Para hacer que el bot use el mensaje especificado\n\nMira esto para conseguir un ID de mensaje:',
     messageUnableToSend: 'No se pudo enviar el mensaje a <#',
     messageSetTitle: 'Mensaje Establecido',
-    messageSetDesc: 'Mensaje establecido con el id ',
+    messageSetDesc: 'Mensaje establecido. ID: ',
     messageNonDigit: 'Tu ID del mensaje no puede tener ningún caracter que no sea un dígito en él.',
     messageErrorID: 'No se pudo encontrar ningún mensaje con ese ID',
     setupChannelFirst: 'Por favor establece un canal primero usando \`z/role channel\`',
     channel: 'z/role channel #canal',
     channelNull: 'Ese no es un canal válido',
     channelSetTitle: 'Canal Establecido',
-    channelSetDesc: 'Canal establecido con el ID ',
+    channelSetDesc: 'Canal establecido. ID: ',
     add: 'z/role add :emoji: @rol\no\nz/role add :emoji: nombre del rol',
     noChannel: 'Por favor usa `z/role channel` primero y luego `z/role message`, entonces usa este comando.',
     roleNull: 'Ese no es un rol válido',
@@ -35,7 +35,7 @@ module.exports = {
   },
   help: [{
     name: 'Comandos',
-    value: '**z/role message** ~~  ~~ mensaje para las reacciones\n**z/role channel** ~~  ~~ canal para las reacciones\n**z/role add** ~~  ~~ añade un rol con un emoji\n**z/role del** ~~  ~~ elimina un rol\n**z/role edit** ~~  ~~ edita un mensaje enviado por Zira\n**z/role list** ~~  ~~ lista de roles siendo usados\n**z/autorole** ~~  ~~ da un rol a los usuarios y bots al unirse\n**z/log** ~~  ~~ registra cuando Zira otorga/remueve un rol\n\n**z/lang** ~~  ~~ establece el idioma\n**z/reset** ~~  ~~ reinicia la configuración del servidor\n**z/info** ~~  ~~ muestra información sobre Zira\n**z/faq** ~~  ~~ frequently asked questions\n**z/ping** ~~  ~~ Zira\'s ping\n**z/invite** ~~  ~~ invita a Zira a tu servidor',
+    value: '**z/role message** ~~  ~~ mensaje para las reacciones\n**z/role channel** ~~  ~~ canal para las reacciones\n**z/role add** ~~  ~~ añade un rol con un emoji\n**z/role del** ~~  ~~ elimina un rol\n**z/role edit** ~~  ~~ edita un mensaje enviado por Zira\n**z/role list** ~~  ~~ lista de roles siendo usados\n**z/autorole** ~~  ~~ da un rol a los usuarios y bots al unirse\n**z/log** ~~  ~~ registra cuando Zira da/quita un rol\n\n**z/lang** ~~  ~~ establece el idioma\n**z/reset** ~~  ~~ reinicia la configuración del servidor\n**z/info** ~~  ~~ muestra información sobre Zira\n**z/faq** ~~  ~~ preguntas frecuentes\n**z/ping** ~~  ~~ Zira\'s ping\n**z/invite** ~~  ~~ invita a Zira a tu servidor',
   }, {
     name: 'Enlaces',
     value: '[Guía para configurar a Zira](https://demo.zira.pw)\n[Servidor de ayuda](https://zira.pw/support)\n[Dashboard de Zira](https://zira.pw)\n[Dona para mantener a Zira funcionando](https://www.patreon.com/HazedSPaCEx)\n[Traduce a Zira](https://github.com/HazedSPaCEx/Zira-Translations)'
@@ -82,28 +82,28 @@ module.exports = {
     no: 'Nada fue reiniciado.'
   },
   faq: {
-    title: 'Frequently Asked Questions',
+    title: 'Preguntas Frecuentes',
     fields: [{
-      name: 'Zira doesn\'t send messages when I do any commands',
-      value: 'Make sure Zira has permission to embed links and send messages in the channel you are trying the commands in'
+      name: 'Zira no envía mensajes cuando uso algún comando',
+      value: 'Asegúrate de que Zira tiene los permisos "Insertar Enlaces" y "Enviar Mensajes" en el canal donde estás usando los comandos'
     }, {
-      name: 'Zira says "Can\'t find a message with that ID" or "Unknown message ID" what do I do?',
-      value: 'Make sure that the message ID is in the channel you\'ve set and that Zira is able to read the channel'
+      name: 'Zira dice "No se pudo encontrar ningún mensaje con ese ID" o "Unknown message ID", ¿qué hago?',
+      value: 'Asegúrate de que el ID del mensaje está en el canal que estableciste y que Zira puede leer el canal'
     }, {
-      name: 'Zira doesn\'t give roles even though I set it up and everything',
-      value: 'Make sure Zira has permission to manage roles and that the "Zira" role is above the roles you\'ve setup'
+      name: 'Zira no da roles a pesar de que configuré todo',
+      value: 'Asegúrate de que Zira tiene el permiso "Administrar Roles" y que el rol de Zira está arriba de todos los roles que configuraste'
     }, {
-      name: 'Is Zira able to remove emojis that don\'t have a corresponding role setup with them?',
-      value: 'Yes, allow Zira to manage messages in the channel you\'ve setup'
+      name: '¿Zira es capaz de remover emojis que no tienen un rol correspondiente configurado?',
+      value: 'Sí, dale a Zira el permiso "Administrar Mensajes" en el canal que estableciste'
     }, {
-      name: 'Is Zira able to handle more than one message?',
-      value: 'Yes, just set another message and add roles to that message'
+      name: '¿Zira puede manejar más de un mensaje?',
+      value: 'Sí, solo establece otro mensaje y añade roles a ese mensaje'
     }, {
-      name: 'Is Zira able to handle more than one channel?',
-      value: 'Yes, just set another channel, then message etc'
+      name: '¿Zira puede manejar más de un canal?',
+      value: 'Sí, solo establece otro canal, luego un mensaje, etc.'
     }, {
-      name: 'How many roles can be on one message?',
-      value: 'Discord has a max of 20 emojis per message so 20 roles'
+      name: '¿Cuántos roles pueden haber en un mensaje?',
+      value: 'Discord tiene un límite de 20 emojis por mensaje así que 20 roles'
     }]
   }
 }
