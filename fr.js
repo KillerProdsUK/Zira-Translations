@@ -82,28 +82,28 @@ module.exports = {
     non: 'La configuration n\'a pas été réinitialisée.'
   },
   faq: {
-    title: 'Frequently Asked Questions',
+    title: 'Foire aux questions',
     fields: [{
-      name: 'Zira doesn\'t send messages when I do any commands',
-      value: 'Make sure Zira has permission to embed links and send messages in the channel you are trying the commands in'
+      name: 'Lorsque je rentre une commande Zira ne répond pas',
+      value: 'Veuillez vérifier que Zira a les permissions `Intégrer des liens` et `Envoyer des messages` dans le salon où vous rentrez les commandes'
     }, {
-      name: 'Zira says "Can\'t find a message with that ID" or "Unknown message ID" what do I do?',
-      value: 'Make sure that the message ID is in the channel you\'ve set and that Zira is able to read the channel'
+      name: 'Zira vous dit "Impossible de trouver le message correspondant à cet ID" ou que l\'ID du message est inconnu" que faire?',
+      value: 'Veuillez vérifier que l\'ID du message se trouve bien dans le salon que vous avez configuré et que Zira possède la permission de voir ce salon'
     }, {
-      name: 'Zira doesn\'t give roles even though I set it up and everything',
-      value: 'Make sure Zira has permission to manage roles and that the "Zira" role is above the roles you\'ve setup'
+      name: 'Zira ne donne pas les rôles alors que vous avez tout configuré?',
+      value: 'Veuillez vérifier que Zira a la permission `Gérer les rôles` et que le rôle de Zira est placé au-dessus des rôles configurés que Zira doit donner'
     }, {
-      name: 'Is Zira able to remove emojis that don\'t have a corresponding role setup with them?',
-      value: 'Yes, allow Zira to manage messages in the channel you\'ve setup'
+      name: 'Est-ce que Zira peut retirer les émojis/réactions n'étant associés à aucun rôle que Zira doit donner?',
+      value: 'Oui, il vous suffit de donner la permission `Gérer les messages` à Zira dans le salon'
     }, {
-      name: 'Is Zira able to handle more than one message?',
-      value: 'Yes, just set another message and add roles to that message'
+      name: 'Zira peut-il gérer plus d\'un message à la fois?',
+      value: 'Oui, il vous suffit de configurer un autre message et d\'ajouter les rôles sur celui-ci'
     }, {
-      name: 'Is Zira able to handle more than one channel?',
-      value: 'Yes, just set another channel, then message etc'
+      name: 'Zira peut-il gérer plus d\'un salon à la fois?',
+      value: 'Oui, il vous suffit de configurer un autre salon, puis le message, etc'
     }, {
-      name: 'How many roles can be on one message?',
-      value: 'Discord has a max of 20 emojis per message so 20 roles'
+      name: 'Combien de rôles peut contenir un message?',
+      value: 'Discord limite à 20 émojis/réactions à la fois par message, donc 20 rôles au maximum'
     }]
   }
 }
