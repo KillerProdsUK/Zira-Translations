@@ -78,10 +78,10 @@ module.exports = {
     reset: "Я больше не войти "
   },
   reset: {
-    noPerm: 'You need be the owner of the server to use this command.',
-    question: 'Are you sure you want to reset the server config?\n**EVERYTHING** setup through Zira will be reset.\n\n*yes or no*',
-    yes: 'Config has been reset.',
-    no: 'Nothing has been reset.'
+    noPerm: 'Вы должны быть владельцем сервера для использования этой команды.', 
+    question: 'Вы уверены, что вы хотите сбросить настройки сервера?\n**ВСЕ** установки через Зира будет сброшен.\n\n*Да или нет*', 
+    yes: 'Конфигурации был изменен.', 
+    no: 'Ничего не было сброшено.' 
   },
   faq: {
     title: 'Frequently Asked Questions',
