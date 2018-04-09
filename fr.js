@@ -93,7 +93,7 @@ module.exports = {
       name: 'Zira ne donne pas les rôles alors que vous avez tout configuré?',
       value: 'Veuillez vérifier que Zira a la permission `Gérer les rôles` et que le rôle de Zira est placé au-dessus des rôles configurés que Zira doit donner'
     }, {
-      name: 'Est-ce que Zira peut retirer les émojis/réactions n\'étant associés à aucun rôle que Zira doit donner?\',
+      name: 'Est-ce que Zira peut retirer les émojis/réactions n\'étant associés à aucun rôle que Zira doit donner?\'
       value: 'Oui, il vous suffit de donner la permission `Gérer les messages` à Zira dans le salon'
     }, {
       name: 'Zira peut-il gérer plus d\'un message à la fois?',
