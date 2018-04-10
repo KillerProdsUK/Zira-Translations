@@ -2,7 +2,7 @@ module.exports = {
   title: 'Utilisation des commandes',
   titleError: 'Erreur :warning:',
   role: {
-    message: 'z/role message <messageID> ~~  ~~ Pour utiliser un message déjà éxistant\nor\nz/role message <message à envoyer> ~~  ~~ Pour que le bot envoie et utilise le message que vous avez demandé\n\nPour avoir l\'ID du message, jetez un coup d\'oeil ici :',
+    message: 'z/role message <messageID> ~~  ~~ Pour utiliser un message déjà éxistant\nou\nz/role message <message à envoyer> ~~  ~~ Pour que le bot envoie et utilise le message que vous avez demandé\n\nPour avoir l\'ID du message, jetez un coup d\'oeil ici :',
     messageUnableToSend: 'Impossible d\'envoyer le message dans <#',
     messageSetTitle: 'Le message a été posté',
     messageSetDesc: 'Le message a été posté avec l\'ID de',
@@ -35,10 +35,10 @@ module.exports = {
   },
   help: [{
     name: 'Commandes',
-    value: '**z/role channel** ~~  ~~ salon pour la réaction\n**z/role message** ~~  ~~ message pour réagir dans\n**z/role add** ~~  ~~ ajouter un rôle avec un émoji\n**z/role del** ~~  ~~ supprimer un role\n**z/role edit** ~~  ~~ modifier un message envoyé par Zira\n**z/role list** ~~  ~~ liste des rôles utilisés\n**z/autorole** ~~  ~~ donner aux utilisateurs et aux bots un rôle lorsqu\'ils rejoignent\n**z/log** ~~  ~~ enregister/log  quand Zira donne ou supprime un role\n**z/join** ~~  ~~ send a message when an user joins\n\n**z/lang** ~~  ~~ Selectionner la langue\n**z/reset** ~~  ~~ Réinitialiser les paramètres du bot\n**z/info** ~~  ~~ informations à propos de Zira\n**z/faq** ~~  ~~ frequently asked questions\n**z/ping** ~~  ~~ Affiche le ping de Zira\n**z/invite** ~~  ~~ Pour inviter Zira',
+    value: '**z/role channel** ~~  ~~ salon où sera posté le message\n**z/role message** ~~  ~~ message sur lequel Zira sera configuré\n**z/role add** ~~  ~~ ajouter un rôle à l\'aide d\'un émoji\n**z/role del** ~~  ~~ supprimer un role\n**z/role edit** ~~  ~~ modifier un message de Zira\n**z/role list** ~~  ~~ liste des rôles utilisés\n**z/autorole** ~~  ~~ donner aux utilisateurs et aux bots un rôle lorsqu\'ils rejoignent\n**z/log** ~~  ~~ enregister/log  quand Zira donne ou supprime un role\n**z/join** ~~  ~~ envoie un message lorsqu'un utilisateur rejoint\n\n**z/lang** ~~  ~~ Selectionner la langue\n**z/reset** ~~  ~~ Réinitialiser les paramètres du bot\n**z/info** ~~  ~~ informations à propos de Zira\n**z/faq** ~~  ~~ FAQ avec les questions fréquemment posées\n**z/ping** ~~  ~~ Affiche le ping de Zira\n**z/invite** ~~  ~~ Pour inviter Zira',
   }, {
     name: 'Liens',
-    value: '[Guide pour configurer Zira](https://demo.zira.pw)\n[Serveur d\'Aide](https://zira.pw/support)\n[Tableau de Bord de Zira](https://zira.pw)\n[N\'hésitez pas à faire des dons pour que Zira continue de fonctionner](https://www.patreon.com/HazedSPaCEx)\n[Traduire Zira](https://github.com/HazedSPaCEx/Zira-Translations)'
+    value: '[Guide pour configurer Zira](https://demo.zira.pw)\n[Serveur d\'Aide](https://zira.pw/support)\n[Tableau de Bord](https://zira.pw)\n[N\'hésitez pas à faire des dons pour que Zira continue de fonctionner](https://www.patreon.com/HazedSPaCEx)\n[Traduire Zira](https://github.com/HazedSPaCEx/Zira-Translations)'
   }],
   perm: {
     noPerm: 'Vous devez être le propriétaire du serveur ou posséder la permission `Gérer les rôles` pour utiliser ces commandes.',
@@ -54,7 +54,7 @@ module.exports = {
     userSet1: `Le rôle de l'utilisateur a été défini à <@&`,
     userSet2: '>',
     userReset: 'Zira ne donnera plus de rôles lorsqu\'un utilisateur rejoindra le serveur.',
-    user: `z/autorole user @role\nor\nz/autorole user role name\n\nDo \`z/autorole user |reset\` pour que les utilisateurs ne recoivent plus de rôles en rejoignant.`,
+    user: `z/autorole user @role\nor\nz/autorole user role name\n\nRentrez la commande \`z/autorole user |reset\` pour que les utilisateurs ne recoivent plus de rôles en rejoignant.`,
     botSet1: `Le rôle du bot a été configuré à <@&`,
     botSet2: '>',
     botReset: 'Zira ne donnera plus de rôles lorsqu\'un bot rejoindra le serveur.',
@@ -71,7 +71,7 @@ module.exports = {
   },
   log: {
     title: "Commande des Logs ",
-    desc: "**z/log #channel** ~~  ~~ set the channel for logging\n\nPour arrêter l\'enregistrement des logs rentrez la commande z/log |reset\n\nIf Zira has insufficient permissions to send messages to the setup channel, your guild might have access to this feature revoked.",
+    desc: "**z/log #channel** ~~  ~~ Configure l\'enregistrement des logs dans ce salon\n\nPour arrêter l\'enregistrement des logs rentrez la commande z/log |reset\n\nSi Zira n\'a pas les permissions d\'envoyer des messages dans le salon configuré, alors cette option sera indisponible sur votre serveur.",
     set: ["Salons des Logs définit à  ", "\nNOTE: Si Zira n\'a pas la permission de parler dans ce salon l\'enregistrement des logs sera désactivé."],
     reset: "Désormais je ne posterais plus les logs dans  "
   },
@@ -107,12 +107,12 @@ module.exports = {
     }]
   },
   join: {
-    help: '**z/join channel** ~~  ~~ set the channel for join messages\n**z/join message** ~~  ~~ message to be sent to the channel\n**z/join toggle** ~~  ~~ toggle whether or not to send a message\n\nIf Zira has insufficient permissions to send messages to the setup channel, your guild might have access to this feature revoked.',
-    on: 'A message will be sent to the setup channel when a user joins',
-    off: 'No messages will be sent',
-    channel: ['Join channel set to <#', '>'],
-    channelUsage: '**z/join channel #channel** ~~  ~~ set the channel for join messages',
-    messageUsage: '**z/join message** ~~  ~~ set the message to be sent on user join\n\nYou can use these placeholders in the message:\n$user ~~  ~~ username\n$mention ~~  ~~ user mention\n$server ~~  ~~ server name',
-    message: 'Join message set to:'
+    help: '**z/join channel** ~~  ~~ définit le salon où seront posté les messages de bienvenue\n**z/join message** ~~  ~~ message qui sera envoyé dans le salon\n**z/join toggle** ~~  ~~ Active/Désactive les messages de bienvenue\n\nSi Zira n\'a pas la permission `Envoyer des messages` dans le salon configuré alors cette option sera indisponible sur votre serveur.',
+    on: 'Le message sera publié dans le salon configuré lorsqu\'un utilisateur rejoindra',
+    off: 'Aucun message ne sera publié',
+    channel: ['Salon de bienvenue définit au salon  <#', '>'],
+    channelUsage: '**z/join channel #channel** ~~  ~~ Définit le salon de bienvenue',
+    messageUsage: '**z/join message** ~~  ~~ Configure le message qui sera envoyé lorsqu\'un utilisateur rejoindra\n\nVous pouvez utiliser ces arguments dans le message :\n$user ~~  ~~ nom de l\'utilisateur\n$mention ~~  ~~ mentionne l\'utilisateur\n$server ~~  ~~ nom du serveur',
+    message: 'Le message de bienvenue est le suivant :'
   }
 }
