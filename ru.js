@@ -35,7 +35,7 @@ module.exports = {
   },
   help: [{
     name: 'Команды',
-    value: '**z/role channel** ~~-~~ канал для реакции\n**z/role message** ~~-~~ сообщение реагировать на\n**z/role add** ~~-~~ Добавление роли с emoji\n**z/role del** ~~-~~ Удаление роли\n**z/role edit** ~~-~~ изменить сообщение, отправленное Zira\n**z/role list** ~~-~~ список ролей используется\n**z/autorole** ~~-~~ дают пользователям и боты роль на соединения\n**z/log** ~~-~~ журнал, когда Zira дает/принимает роль\n**z/join ~~  ~~ send a message when an user joins\n\n**z/suggest** ~~-~~ представить предложения/идеи\n**z/info** ~~-~~ Информация о Zira\n**z/faq** ~~  ~~ frequently asked questions\n**z/ping** ~~-~~ Zira\'s пинг\n**z/invite** ~~-~~ Приглашаем Zira',
+    value: '**z/role channel** ~~-~~ канал для реакции\n**z/role message** ~~-~~ сообщение реагировать на\n**z/role add** ~~-~~ Добавление роли с emoji\n**z/role del** ~~-~~ Удаление роли\n**z/role edit** ~~-~~ изменить сообщение, отправленное Zira\n**z/role list** ~~-~~ список ролей используется\n**z/autorole** ~~-~~ дают пользователям и боты роль на соединения\n**z/log** ~~-~~ журнал, когда Zira дает/принимает роль\n**z/join** ~~  ~~ send a message when an user joins\n\n**z/suggest** ~~-~~ представить предложения/идеи\n**z/info** ~~-~~ Информация о Zira\n**z/faq** ~~  ~~ frequently asked questions\n**z/ping** ~~-~~ Zira\'s пинг\n**z/invite** ~~-~~ Приглашаем Zira',
 
   }, {
     name: 'Ссылки',
