@@ -45,7 +45,8 @@ module.exports = {
     noLangPerm: 'Tienes que ser el dueño del servidor o tener el permiso `Administrar Servidor` para cambiar el idioma del bot.',
   },
   lang: {
-    langUpdate: 'Idioma actualizado.'
+    langUpdate: 'Idioma actualizado.',
+    translate: 'If you want Zira in a language that isn\'t on the list above you can help translate it [here](https://github.com/HazedSPaCEx/Zira-Translations)'
   },
   auto: {
     title: 'Rol Automático',

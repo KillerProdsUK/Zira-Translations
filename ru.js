@@ -47,7 +47,8 @@ module.exports = {
 
   },
   lang: {
-    langUpdate: 'Языковые обновления.'
+    langUpdate: 'Языковые обновления.',
+    translate: 'If you want Zira in a language that isn\'t on the list above you can help translate it [here](https://github.com/HazedSPaCEx/Zira-Translations)'
   },
   auto: {
     title: 'Auto роль',
