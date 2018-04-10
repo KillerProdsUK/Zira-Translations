@@ -1,68 +1,68 @@
 {
   "nav": {
-    "invite": "Invite",
-    "support": "Support",
-    "donate": "Donate",
-    "guide": "Guide",
-    "servers": "Servers",
-    "noservers": "No Servers",
-    "login": "Login",
-    "logout": "Logout",
-    "language": "Language"
+    "invite": "Invitar",
+    "support": "Soporte",
+    "donate": "Donar",
+    "guide": "Guía",
+    "servers": "Servidores",
+    "noservers": "No hay servidores",
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión",
+    "language": "Idioma"
   },
   "home": {
     "about": {
-      "title": "About Zira",
-      "description": "Zira allows users to give or take roles away from themselves by simply reacting or unreacting to the setup message(s)."
+      "title": "Acerca de Zira",
+      "description": "Zira permite a los usuarios darse o quitarse roles simplemente reaccionando o quitando la reacción al mensaje (o mensajes) establecidos."
     },
     "features": {
-      "title": "Features",
-      "description": "Multiple messages<br>Multiple channels<br>Able to use any role<br>Autorole on user or bot join <small>(command setup only)</small><br>Able to use custom or regular emojis<br>Join messages <small>(command setup only)</small>"
+      "title": "Características",
+      "description": "Múltiples mensajes<br>Múltiples canales<br>Capaz de usar cualquier rol<br>Rol Automático cuando un usuario o bot se una <small>(solo configurable a través de comandos)</small><br>Capaz de usar emojis personalizados o comunes<br>Mensajes al unirse un usuario <small>(solo configurable a través de comandos)</small>"
     },
     "demo": "Demo"
   },
   "server": {
     "header": {
-      "title": "Managing",
-      "description": "NOTE: You don't need to change every field each time."
+      "title": "Administrando",
+      "description": "NOTA: No necesitas cambiar cada campo cada vez."
     },
     "channel": {
-      "label": "Channel",
-      "button": "Set Channel"
+      "label": "Canal",
+      "button": "Establecer Canal"
     },
     "message": {
-      "label": "Message ID in Selected Channel",
-      "placeholder": "Message ID",
+      "label": "ID del Mensaje en el Canal Seleccionado",
+      "placeholder": "ID del Mensaje",
       "help": {
-        "before": "To get a message ID follow ",
-        "after": "this"
+        "before": "Para conseguir un ID de mensaje lee ",
+        "after": "esto"
       },
-      "button": "Add Message ID"
+      "button": "Añadir ID de Mensaje"
     },
     "add": {
-      "label": "Add Role",
+      "label": "Añadir Rol",
       "emoji": "Emoji",
-      "notice": "Only custom emojis from the server. <br>If you want to use regular emojis please use the add command in your server."
+      "notice": "Solo emojis personalizados del servidor. <br>Si quieres usar emojis comunes por favor usa el comando z/role add en tu servidor."
     },
     "del": {
-      "label": "Remove Role"
+      "label": "Remover Rol"
     },
     "list": {
-      "label": "Role List",
-      "role": "Role",
+      "label": "Lista de Roles",
+      "role": "Rol",
       "emoji": "Emoji"
     }
   },
   "alerts": {
     "success": {
-      "channel": "Channel Set",
-      "message": "Message Added",
-      "add": "Role Added",
-      "del": "Role Removed"
+      "channel": "Canal Establecido",
+      "message": "Mensaje Añadido",
+      "add": "Rol Añadido",
+      "del": "Rol Removido"
     },
     "error": {
-      "unknown": "Unknown Error",
-      "umessage": "Unknown Message ID"
+      "unknown": "Error Desconocido",
+      "umessage": "ID de Mensaje Desconocido"
     }
   }
 }
