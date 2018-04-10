@@ -35,7 +35,7 @@ module.exports = {
   },
   help: [{
     name: 'Comandos',
-    value: '**z/role message** ~~  ~~ mensaje para las reacciones\n**z/role channel** ~~  ~~ canal para las reacciones\n**z/role add** ~~  ~~ añade un rol con un emoji\n**z/role del** ~~  ~~ elimina un rol\n**z/role edit** ~~  ~~ edita un mensaje enviado por Zira\n**z/role list** ~~  ~~ lista de roles siendo usados\n**z/autorole** ~~  ~~ da un rol a los usuarios y bots al unirse\n**z/log** ~~  ~~ registra cuando Zira da/quita un rol\n\n**z/lang** ~~  ~~ establece el idioma\n**z/reset** ~~  ~~ reinicia la configuración del servidor\n**z/info** ~~  ~~ muestra información sobre Zira\n**z/faq** ~~  ~~ preguntas frecuentes\n**z/ping** ~~  ~~ Zira\'s ping\n**z/invite** ~~  ~~ invita a Zira a tu servidor',
+    value: '**z/role channel** ~~  ~~ canal para las reacciones\n**z/role message** ~~  ~~ mensaje para las reacciones\n**z/role add** ~~  ~~ añade un rol con un emoji\n**z/role del** ~~  ~~ elimina un rol\n**z/role edit** ~~  ~~ edita un mensaje enviado por Zira\n**z/role list** ~~  ~~ lista de roles siendo usados\n**z/autorole** ~~  ~~ da un rol a los usuarios y bots al unirse\n**z/log** ~~  ~~ registra cuando Zira da/quita un rol\n\n**z/lang** ~~  ~~ establece el idioma\n**z/reset** ~~  ~~ reinicia la configuración del servidor\n**z/info** ~~  ~~ muestra información sobre Zira\n**z/faq** ~~  ~~ preguntas frecuentes\n**z/ping** ~~  ~~ Zira\'s ping\n**z/invite** ~~  ~~ invita a Zira a tu servidor',
   }, {
     name: 'Enlaces',
     value: '[Guía para configurar a Zira](https://demo.zira.pw)\n[Servidor de ayuda](https://zira.pw/support)\n[Dashboard de Zira](https://zira.pw)\n[Dona para mantener a Zira funcionando](https://www.patreon.com/HazedSPaCEx)\n[Traduce a Zira](https://github.com/HazedSPaCEx/Zira-Translations)'
@@ -71,7 +71,7 @@ module.exports = {
   },
   log: {
     title: "Comando de Registro",
-    desc: "z/log #canal\n\nPara detener el registro usa z/log |reset",
+    desc: "**z/log #canal** ~~  ~~ set the channel for logging\n\nPara detener el registro usa z/log |reset\n\nIf Zira has insufficient permissions to send messages to the setup channel, your guild might have access to this feature revoked.",
     set: ["Canal de registro establecido a ", "\nNOTA: si Zira no es capz de enviar mensajes a ese canal, el registro será deshabilitado."],
     reset: "Ya no voy a registrar en "
   },
@@ -105,5 +105,14 @@ module.exports = {
       name: '¿Cuántos roles pueden haber en un mensaje?',
       value: 'Discord tiene un límite de 20 emojis por mensaje así que 20 roles'
     }]
+  },
+  join: {
+    help: '**z/join channel** ~~  ~~ set the channel for join messages\n**z/join message** ~~  ~~ message to be sent to the channel\n**z/join toggle** ~~  ~~ toggle whether or not to send a message\n\nIf Zira has insufficient permissions to send messages to the setup channel, your guild might have access to this feature revoked.',
+    on: 'A message will be sent to the setup channel when a user joins',
+    off: 'No messages will be sent',
+    channel: ['Join channel set to <#', '>'],
+    channelUsage: '**z/join channel #channel** ~~  ~~ set the channel for join messages',
+    messageUsage: '**z/join message** ~~  ~~ set the message to be sent on user join\n\nYou can use these placeholders in the message:\n$user ~~  ~~ username\n$mention ~~  ~~ user mention\n$server ~~  ~~ server name\n$join ~~  ~~ join position',
+    message: 'Join message set to:'
   }
 }

@@ -35,7 +35,7 @@ module.exports = {
   },
   help: [{
     name: 'Commands',
-    value: '**z/role message** ~~  ~~ message to react on\n**z/role channel** ~~  ~~ channel for the reaction\n**z/role add** ~~  ~~ add a role with an emoji\n**z/role del** ~~  ~~ delete a role\n**z/role edit** ~~  ~~ edit a message sent by Zira\n**z/role list** ~~  ~~ list roles being used\n**z/autorole** ~~  ~~ give users and bots a role on join\n**z/log** ~~  ~~ log when Zira gives/takes a role\n\n**z/lang** ~~  ~~ set locale\n**z/reset** ~~  ~~ reset server settings\n**z/info** ~~  ~~ info about Zira\n**z/faq** ~~  ~~ frequently asked questions\n**z/ping** ~~  ~~ Zira\'s ping\n**z/invite** ~~  ~~ invite Zira',
+    value: '**z/role channel** ~~  ~~ channel for the reaction\n**z/role message** ~~  ~~ message to react on\n**z/role add** ~~  ~~ add a role with an emoji\n**z/role del** ~~  ~~ delete a role\n**z/role edit** ~~  ~~ edit a message sent by Zira\n**z/role list** ~~  ~~ list roles being used\n**z/autorole** ~~  ~~ give users and bots a role on join\n**z/log** ~~  ~~ log when Zira gives/takes a role\n\n**z/lang** ~~  ~~ set locale\n**z/reset** ~~  ~~ reset server settings\n**z/info** ~~  ~~ info about Zira\n**z/faq** ~~  ~~ frequently asked questions\n**z/ping** ~~  ~~ Zira\'s ping\n**z/invite** ~~  ~~ invite Zira',
   }, {
     name: 'Links',
     value: '[Guide to setup Zira](https://demo.zira.pw)\n[Support Server](https://zira.pw/support)\n[Zira\'s Dashboard](https://zira.pw)\n[Donate to keep Zira running](https://www.patreon.com/HazedSPaCEx)\n[Translate Zira](https://github.com/HazedSPaCEx/Zira-Translations)'
@@ -71,7 +71,7 @@ module.exports = {
   },
   log: {
     title: "Log Command",
-    desc: "z/log #channel\n\nTo stop logging do z/log |reset",
+    desc: "**z/log #channel** ~~  ~~ set the channel for logging\n\nTo stop logging do z/log |reset\n\nIf Zira has insufficient permissions to send messages to the setup channel, your guild might have access to this feature revoked.",
     set: ["Log channel set to ", "\nNOTE: If Zira is not able to send to the channel, logging will be disabled."],
     reset: "I will no longer log to "
   },
@@ -105,5 +105,14 @@ module.exports = {
       name: 'How many roles can be on one message?',
       value: 'Discord has a max of 20 emojis per message so 20 roles'
     }]
+  },
+  join: {
+    help: '**z/join channel** ~~  ~~ set the channel for join messages\n**z/join message** ~~  ~~ message to be sent to the channel\n**z/join toggle** ~~  ~~ toggle whether or not to send a message\n\nIf Zira has insufficient permissions to send messages to the setup channel, your guild might have access to this feature revoked.',
+    on: 'A message will be sent to the setup channel when a user joins',
+    off: 'No messages will be sent',
+    channel: ['Join channel set to <#', '>'],
+    channelUsage: '**z/join channel #channel** ~~  ~~ set the channel for join messages',
+    messageUsage: '**z/join message** ~~  ~~ set the message to be sent on user join\n\nYou can use these placeholders in the message:\n$user ~~  ~~ username\n$mention ~~  ~~ user mention\n$server ~~  ~~ server name\n$join ~~  ~~ join position',
+    message: 'Join message set to:'
   }
 }
