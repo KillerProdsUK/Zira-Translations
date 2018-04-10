@@ -87,7 +87,7 @@ module.exports = {
       name: 'Zira no envía mensajes cuando uso algún comando',
       value: 'Asegúrate de que Zira tiene los permisos "Insertar Enlaces" y "Enviar Mensajes" en el canal donde estás usando los comandos'
     }, {
-      name: 'Zira dice "No se pudo encontrar ningún mensaje con ese ID" o "Unknown message ID", ¿qué hago?',
+      name: 'Zira dice "No se pudo encontrar ningún mensaje con ese ID" o "ID de Mensaje Desconocido", ¿qué hago?',
       value: 'Asegúrate de que el ID del mensaje está en el canal que estableciste y que Zira puede leer el canal'
     }, {
       name: 'Zira no da roles a pesar de que configuré todo',
