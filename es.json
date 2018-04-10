@@ -19,7 +19,7 @@
       "title": "Características",
       "description": "Múltiples mensajes<br>Múltiples canales<br>Capaz de usar cualquier rol<br>Rol Automático cuando un usuario o bot se una <small>(solo configurable a través de comandos)</small><br>Capaz de usar emojis personalizados o comunes<br>Mensajes al unirse un usuario <small>(solo configurable a través de comandos)</small>"
     },
-    "demo": "Demo"
+    "demo": "Demostración"
   },
   "server": {
     "header": {
