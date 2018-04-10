@@ -112,7 +112,7 @@ module.exports = {
     off: 'No messages will be sent',
     channel: ['Join channel set to <#', '>'],
     channelUsage: '**z/join channel #channel** ~~  ~~ set the channel for join messages',
-    messageUsage: '**z/join message** ~~  ~~ set the message to be sent on user join\n\nYou can use these placeholders in the message:\n$user ~~  ~~ username\n$mention ~~  ~~ user mention\n$server ~~  ~~ server name\n$join ~~  ~~ join position',
+    messageUsage: '**z/join message** ~~  ~~ set the message to be sent on user join\n\nYou can use these placeholders in the message:\n$user ~~  ~~ username\n$mention ~~  ~~ user mention\n$server ~~  ~~ server name',
     message: 'Join message set to:'
   }
 }
