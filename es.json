@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "invite": "Invite",
+    "support": "Support",
+    "donate": "Donate",
+    "guide": "Guide",
+    "servers": "Servers",
+    "noservers": "No Servers",
+    "login": "Login",
+    "logout": "Logout",
+    "language": "Language"
+  },
+  "home": {
+    "about": {
+      "title": "About Zira",
+      "description": "Zira allows users to give or take roles away from themselves by simply reacting or unreacting to the setup message(s)."
+    },
+    "features": {
+      "title": "Features",
+      "description": "Multiple messages<br>Multiple channels<br>Able to use any role<br>Autorole on user or bot join <small>(command setup only)</small><br>Able to use custom or regular emojis<br>Join messages <small>(command setup only)</small>"
+    },
+    "demo": "Demo"
+  },
+  "server": {
+    "header": {
+      "title": "Managing",
+      "description": "NOTE: You don't need to change every field each time."
+    },
+    "channel": {
+      "label": "Channel",
+      "button": "Set Channel"
+    },
+    "message": {
+      "label": "Message ID in Selected Channel",
+      "placeholder": "Message ID",
+      "help": {
+        "before": "To get a message ID follow ",
+        "after": "this"
+      },
+      "button": "Add Message ID"
+    },
+    "add": {
+      "label": "Add Role",
+      "emoji": "Emoji",
+      "notice": "Only custom emojis from the server. <br>If you want to use regular emojis please use the add command in your server."
+    },
+    "del": {
+      "label": "Remove Role"
+    },
+    "list": {
+      "label": "Role List",
+      "role": "Role",
+      "emoji": "Emoji"
+    }
+  },
+  "alerts": {
+    "success": {
+      "channel": "Channel Set",
+      "message": "Message Added",
+      "add": "Role Added",
+      "del": "Role Removed"
+    },
+    "error": {
+      "unknown": "Unknown Error",
+      "umessage": "Unknown Message ID"
+    }
+  }
+}
