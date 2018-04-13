@@ -44,7 +44,7 @@ module.exports = {
   perm: {
     noPerm: 'Вы должны быть владельцем сервера, или «`MANAGE_ROLES`» в Перми для использования этих команд.',
     noLangPerm: 'Вы должны быть владельцем сервера, или «`MANAGE_GUILD`» Пермь изменить скрипт язык.',
-    noGuildPerm: 'You need be the owner of the server, or have the `MANAGE_GUILD` permission to change use these commands.'
+    noGuildPerm: 'You need be the owner of the server, or have the `MANAGE_GUILD` permission to use this command.'
 
   },
   lang: {

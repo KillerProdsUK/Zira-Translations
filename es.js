@@ -43,7 +43,7 @@ module.exports = {
   perm: {
     noPerm: 'Tienes que ser el dueño del servidor o tener el permiso `Administrar Roles` para usar estos comandos.',
     noLangPerm: 'Tienes que ser el dueño del servidor o tener el permiso `Administrar Servidor` para cambiar el idioma del bot.',
-    noGuildPerm: 'You need be the owner of the server, or have the `MANAGE_GUILD` permission to change use these commands.'
+    noGuildPerm: 'You need be the owner of the server, or have the `MANAGE_GUILD` permission to use this command.'
   },
   lang: {
     langUpdate: 'Idioma actualizado.',
