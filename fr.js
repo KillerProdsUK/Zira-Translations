@@ -114,7 +114,16 @@ module.exports = {
     off: 'Aucun message ne sera publié',
     channel: ['Salon de bienvenue définit au salon  <#', '>'],
     channelUsage: '**z/join channel #channel** ~~  ~~ Définit le salon de bienvenue',
-    messageUsage: '**z/join message** ~~  ~~ Configure le message qui sera envoyé lorsqu\'un utilisateur rejoindra\n\nVous pouvez utiliser ces arguments dans le message :\n$user ~~  ~~ nom de l\'utilisateur\n$mention ~~  ~~ mentionne l\'utilisateur\n$server ~~  ~~ nom du serveur',
+    messageUsage: '**z/join message** ~~  ~~ Configure le message qui sera envoyé lorsqu\'un utilisateur rejoindra\n\nVous pouvez utiliser ces arguments dans le message :\n$user ~~  ~~ nom de l\'utilisateur\n$mention ~~  ~~ mentionne l\'utilisateur\n$server ~~  ~~ nom du serveur\n$membercount ~~  ~~ new member count',
     message: 'Le message de bienvenue est le suivant :'
+  },
+  leave: {
+    help: '**z/leave channel** ~~  ~~ set the channel for leave messages\n**z/leave message** ~~  ~~ message to be sent to the channel\n**z/leave toggle** ~~  ~~ toggle whether or not to send a message\n\nIf Zira has insufficient permissions to send messages to the setup channel, your guild might have access to this feature revoked.',
+    on: 'When a user joins, a message will be sent to the setup channel.',
+    off: 'No messages will be sent.',
+    channel: ['Leave channel set to <#', '>'],
+    channelUsage: '**z/leave channel #channel** ~~  ~~ set the channel for leave messages',
+    messageUsage: '**z/leave message** ~~  ~~ set the message to be sent on user leave\n\nYou can use these placeholders in the message:\n$user ~~  ~~ username\n$mention ~~  ~~ user mention\n$server ~~  ~~ server name\n$membercount ~~  ~~ new member count',
+    message: 'Leave message set to:'
   }
 }

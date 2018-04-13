@@ -116,7 +116,16 @@ module.exports = {
     off: 'No messages will be sent',
     channel: ['Join channel set to <#', '>'],
     channelUsage: '**z/join channel #channel** ~~  ~~ set the channel for join messages',
-    messageUsage: '**z/join message** ~~  ~~ set the message to be sent on user join\n\nYou can use these placeholders in the message:\n$user ~~  ~~ username\n$mention ~~  ~~ user mention\n$server ~~  ~~ server name',
+    messageUsage: '**z/join message** ~~  ~~ set the message to be sent on user join\n\nYou can use these placeholders in the message:\n$user ~~  ~~ username\n$mention ~~  ~~ user mention\n$server ~~  ~~ server name\n$membercount ~~  ~~ new member count',
     message: 'Join message set to:'
+  },
+  leave: {
+    help: '**z/leave channel** ~~  ~~ set the channel for leave messages\n**z/leave message** ~~  ~~ message to be sent to the channel\n**z/leave toggle** ~~  ~~ toggle whether or not to send a message\n\nIf Zira has insufficient permissions to send messages to the setup channel, your guild might have access to this feature revoked.',
+    on: 'When a user joins, a message will be sent to the setup channel.',
+    off: 'No messages will be sent.',
+    channel: ['Leave channel set to <#', '>'],
+    channelUsage: '**z/leave channel #channel** ~~  ~~ set the channel for leave messages',
+    messageUsage: '**z/leave message** ~~  ~~ set the message to be sent on user leave\n\nYou can use these placeholders in the message:\n$user ~~  ~~ username\n$mention ~~  ~~ user mention\n$server ~~  ~~ server name\n$membercount ~~  ~~ new member count',
+    message: 'Leave message set to:'
   }
 }
