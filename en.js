@@ -35,7 +35,7 @@ module.exports = {
   },
   help: [{
     name: 'Commands',
-    value: '**z/role channel** ~~  ~~ channel for the reaction\n**z/role message** ~~  ~~ message to react on\n**z/role add** ~~  ~~ add a role with an emoji\n**z/role del** ~~  ~~ delete a role\n**z/role edit** ~~  ~~ edit a message sent by Zira\n**z/role list** ~~  ~~ list roles being used\n**z/autorole** ~~  ~~ give users and bots a role on join\n**z/log** ~~  ~~ log when Zira gives/takes a role\n**z/join** ~~  ~~ sends a message when a user joins\n\n**z/lang** ~~  ~~ set locale\n**z/reset** ~~  ~~ reset server settings\n**z/info** ~~  ~~ info about Zira\n**z/faq** ~~  ~~ frequently asked questions\n**z/ping** ~~  ~~ Zira\'s ping\n**z/invite** ~~  ~~ invite Zira',
+    value: '**z/role channel** ~~  ~~ channel for the reaction\n**z/role message** ~~  ~~ message to react on\n**z/role add** ~~  ~~ add a role with an emoji\n**z/role del** ~~  ~~ delete a role\n**z/role edit** ~~  ~~ edit a message sent by Zira\n**z/role list** ~~  ~~ list roles being used\n**z/autorole** ~~  ~~ give users and bots a role on join\n**z/log** ~~  ~~ log when Zira gives/takes a role\n**z/join** ~~  ~~ sends a message when a user joins\n**z/leave** ~~  ~~ sends a message when a user leaves\n\n**z/lang** ~~  ~~ set locale\n**z/reset** ~~  ~~ reset server settings\n**z/info** ~~  ~~ info about Zira\n**z/faq** ~~  ~~ frequently asked questions\n**z/ping** ~~  ~~ Zira\'s ping\n**z/invite** ~~  ~~ invite Zira',
   }, {
     name: 'Links',
     value: '[Guide to setup Zira](https://demo.zira.pw)\n[Support Server](https://zira.pw/support)\n[Zira\'s Dashboard](https://zira.pw)\n[Donate to keep Zira running](https://www.patreon.com/HazedSPaCEx)\n[Translate Zira](https://github.com/HazedSPaCEx/Zira-Translations)'
