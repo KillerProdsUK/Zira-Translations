@@ -79,9 +79,9 @@ module.exports = {
   },
   reset: {
     noPerm: 'Vous devez être le propriétaire du serveur pour executer cette commande.',
-    question: 'Êtes vous sûr de vouloir réinitialiser la configuration du serveur ?\n**TOUTE** la configuration enregistrée de Zira sera réinitialisée.\n\n*oui ou non*',
-    oui: 'La configuration a été réinitialisée.',
-    non: 'La configuration n\'a pas été réinitialisée.'
+    question: 'Êtes vous sûr de vouloir réinitialiser la configuration du serveur ?\n**TOUTE** la configuration enregistrée de Zira sera réinitialisée.\n\n*yes ou no*',
+    yes: 'La configuration a été réinitialisée.',
+    no: 'La configuration n\'a pas été réinitialisée.'
   },
   faq: {
     title: 'Foire aux questions',
