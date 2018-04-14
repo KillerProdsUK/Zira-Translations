@@ -35,7 +35,7 @@ module.exports = {
   },
   help: [{
     name: 'Comandos',
-    value: '**z/role channel** ~~  ~~ canal para las reacciones\n**z/role message** ~~  ~~ mensaje para las reacciones\n**z/role add** ~~  ~~ añade un rol con un emoji\n**z/role del** ~~  ~~ elimina un rol\n**z/role edit** ~~  ~~ edita un mensaje enviado por Zira\n**z/role list** ~~  ~~ lista de roles siendo usados\n**z/autorole** ~~  ~~ da un rol a los usuarios y bots al unirse\n**z/log** ~~  ~~ registra cuando Zira da/quita un rol\n**z/join** ~~  ~~ envía un mensaje cuando un usuario se une\n**z/leave** ~~  ~~ sends a message when a user leaves\n\n**z/lang** ~~  ~~ establece el idioma\n**z/reset** ~~  ~~ restablece los ajustes del servidor\n**z/info** ~~  ~~ muestra información sobre Zira\n**z/faq** ~~  ~~ preguntas frecuentes\n**z/ping** ~~  ~~ Zira\'s ping\n**z/invite** ~~  ~~ invita a Zira a tu servidor',
+    value: '**z/role channel** ~~  ~~ canal para las reacciones\n**z/role message** ~~  ~~ mensaje para las reacciones\n**z/role add** ~~  ~~ añade un rol con un emoji\n**z/role del** ~~  ~~ elimina un rol\n**z/role edit** ~~  ~~ edita un mensaje enviado por Zira\n**z/role list** ~~  ~~ lista de roles siendo usados\n**z/autorole** ~~  ~~ da un rol a los usuarios y bots al unirse\n**z/log** ~~  ~~ registra cuando Zira da/quita un rol\n**z/join** ~~  ~~ envía un mensaje cuando un usuario se une\n**z/leave** ~~  ~~ envía un mensaje cuando un usuario se va\n\n**z/lang** ~~  ~~ establece el idioma\n**z/reset** ~~  ~~ restablece los ajustes del servidor\n**z/info** ~~  ~~ muestra información sobre Zira\n**z/faq** ~~  ~~ preguntas frecuentes\n**z/ping** ~~  ~~ Zira\'s ping\n**z/invite** ~~  ~~ invita a Zira a tu servidor',
   }, {
     name: 'Enlaces',
     value: '[Guía para configurar a Zira](https://demo.zira.pw/es/)\n[Servidor de ayuda](https://zira.pw/support)\n[Dashboard de Zira](https://zira.pw)\n[Dona para mantener a Zira funcionando](https://www.patreon.com/HazedSPaCEx)\n[Traduce a Zira](https://github.com/HazedSPaCEx/Zira-Translations)'
@@ -43,7 +43,7 @@ module.exports = {
   perm: {
     noPerm: 'Tienes que ser el dueño del servidor o tener el permiso `Administrar Roles` para usar estos comandos.',
     noLangPerm: 'Tienes que ser el dueño del servidor o tener el permiso `Administrar Servidor` para cambiar el idioma del bot.',
-    noGuildPerm: 'You need be the owner of the server, or have the `MANAGE_GUILD` permission to use this command.'
+    noGuildPerm: 'Tienes que ser el dueño del servidor o tener el permiso `Administrar Servidor` para usar este comando.'
   },
   lang: {
     langUpdate: 'Idioma actualizado.',
@@ -114,16 +114,16 @@ module.exports = {
     off: 'No se enviarán mensajes',
     channel: ['Canal establecido a <#', '>'],
     channelUsage: '**z/join channel #canal** ~~  ~~ establece el canal para los mensajes enviados cuando haya un nuevo usuario',
-    messageUsage: '**z/join message** ~~  ~~ establece el mensaje a ser enviado al canal\n\nPuedes usar estas referencias en el mensaje:\n$user ~~  ~~ nombre de usuario\n$mention ~~  ~~ mención de usuario\n$server ~~  ~~ nombre del servidor\n$membercount ~~  ~~ new member count',
+    messageUsage: '**z/join message** ~~  ~~ establece el mensaje a ser enviado\n\nPuedes usar estas referencias en el mensaje:\n$user ~~  ~~ nombre de usuario\n$mention ~~  ~~ mención al usuario\n$server ~~  ~~ nombre del servidor\n$membercount ~~  ~~ nueva cantidad de miembros',
     message: 'Mensaje establecido como:'
   },
   leave: {
-    help: '**z/leave channel** ~~  ~~ set the channel for leave messages\n**z/leave message** ~~  ~~ message to be sent to the channel\n**z/leave toggle** ~~  ~~ toggle whether or not to send a message\n\nIf Zira has insufficient permissions to send messages to the setup channel, your guild might have access to this feature revoked.',
-    on: 'When a user leaves, a message will be sent to the setup channel.',
-    off: 'No messages will be sent.',
-    channel: ['Leave channel set to <#', '>'],
-    channelUsage: '**z/leave channel #channel** ~~  ~~ set the channel for leave messages',
-    messageUsage: '**z/leave message** ~~  ~~ set the message to be sent on user leave\n\nYou can use these placeholders in the message:\n$user ~~  ~~ username\n$mention ~~  ~~ user mention\n$server ~~  ~~ server name\n$membercount ~~  ~~ new member count',
-    message: 'Leave message set to:'
+    help: '**z/leave channel** ~~  ~~ establece este canal para los mensajes enviados cuando alguien abandone el servidor\n**z/leave message** ~~  ~~ establece el mensaje a ser enviado al canal\n**z/leave toggle** ~~  ~~ habilita o deshabilita los mensajes\n\nSi Zira no tiene suficientes permisos para enviar mensajes al canal establecido, tu servidor podría perder el acceso a esta característica.',
+    on: 'Un mensaje será enviado al canal establecido cuando alguien abandone el servidor',
+    off: 'No se enviarán mensajes.',
+    channel: ['Canal establecido a <#', '>'],
+    channelUsage: '**z/leave channel #canal** ~~  ~~ establece el canal para los mensajes enviados cuando alguien abandone el servidor',
+    messageUsage: '**z/leave message** ~~  ~~ establece el mensaje a ser enviado\n\nPuedes usar estas referencias en el mensaje:\n$user ~~  ~~ nombre de usuario\n$mention ~~  ~~ mención al usuario\n$server ~~  ~~ nombre del servidor\n$membercount ~~  ~~ nueva cantidad de miembros',
+    message: 'Mensaje establecido como:'
   }
 }
