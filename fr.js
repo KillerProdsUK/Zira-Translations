@@ -118,12 +118,12 @@ module.exports = {
     message: 'Le message de bienvenue est le suivant :'
   },
   leave: {
-    help: '**z/leave channel** ~~  ~~ définit le salon où seront posté les messages d\'aurevoir\n**z/leave message** ~~  ~~ message qui sera envoyé dans le salon\n**z/leave toggle** ~~  ~~ Active/Désactive les messages d\'aurevoir\n\nSi Zira n'\a pas la permission `Envoyer des messages` dans le salon configuré alors cette option sera indisponible sur votre serveur.',
+    help: '**z/leave channel** ~~  ~~ définit le salon où seront posté les messages d\'aurevoir\n**z/leave message** ~~  ~~ message qui sera envoyé dans le salon\n**z/leave toggle** ~~  ~~ Active/Désactive les messages d\'aurevoir\n\nSi Zira n\'a pas la permission `Envoyer des messages` dans le salon configuré alors cette option sera indisponible sur votre serveur.',
     on: 'Le message sera publié dans le salon configuré lorsqu\'un utilisateur quittera le serveur.',
     off: 'Aucun message ne sera publié.',
     channel: ['Salon d\'aurevoir définit au salon  <#', '>'],
-    channelUsage: '**z/leave channel #channel** ~~  ~~ Définit le salon d'\aurevoir',
-    messageUsage: '**z/leave message** ~~  ~~ Configure le message qui sera envoyé lorsqu'\un utilisateur quittera le serveur\n\nVous pouvez utiliser ces arguments dans le message :\n$user ~~  ~~ nom de l'\utilisateur\n$mention ~~  ~~ mentionne l'\utilisateur\n$server ~~  ~~ nom du serveur\n$membercount ~~  ~~ affiche le nombre de personne sur le serveur',
+    channelUsage: '**z/leave channel #channel** ~~  ~~ Définit le salon d\'aurevoir',
+    messageUsage: '**z/leave message** ~~  ~~ Configure le message qui sera envoyé lorsqu\'un utilisateur quittera le serveur\n\nVous pouvez utiliser ces arguments dans le message :\n$user ~~  ~~ nom de l\'utilisateur\n$mention ~~  ~~ mentionne l\'utilisateur\n$server ~~  ~~ nom du serveur\n$membercount ~~  ~~ affiche le nombre de personne sur le serveur',
     message: 'Le message d\'aurevoir est le suivant:'
   }
 }
