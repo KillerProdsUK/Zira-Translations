@@ -47,7 +47,7 @@ module.exports = {
   },
   lang: {
     langUpdate: 'La langue a été mise à jour.',
-    translate: 'Si vous souhaitez avoir Zira dans un langage qui n'est pas présent dans la liste ci-dessus,\nvous pouvez aider à traduire Zira [ici](https://github.com/HazedSPaCEx/Zira-Translations)'
+    translate: 'Si vous souhaitez avoir Zira dans un langage qui n\'est pas présent dans la liste ci-dessus,\nvous pouvez aider à traduire Zira [ici](https://github.com/HazedSPaCEx/Zira-Translations)'
   },
   auto: {
     title: 'Rôle automatique',
