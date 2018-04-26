@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "invite": "Invitation",
+    "support": "Support",
+    "donate": "Donation",
+    "guide": "Guide	",
+    "servers": "Serveurs",
+    "noservers": "Aucun serveur",
+    "login": "Connexion",
+    "logout": "Déconnexion",
+    "language": "Langage"
+  },
+  "home": {
+    "about": {
+      "title": "A propos de Zira",
+      "description": "Zira permet aux utilisateurs de se donner ou de se retirer un rôle par eux-mêmes juste en réagissant sur des réactions/émojis."
+    },
+    "features": {
+      "title": "Fonctionnalités",
+      "description": "Possibilité d'utiliser plusieurs messages<br>Dans multiples salons<br>Tout rôle peut être utilisé<br>Ajout de rôle automatiquement lorsqu'un utilisateur ou un bot rejoint<small>(configuration à réaliser)</small><br>Possibilité d'utiliser des émojis personnalisés<br>Message de bienvenue et d'aurevoir<small>(configuration à réaliser)</small>"
+    },
+    "demo": "Démonstration"
+  },
+  "server": {
+    "header": {
+      "title": "Configuration du serveur",
+      "description": "NOTE: Vous n'avez pas besoin de changer chaque champ chaque fois."
+    },
+    "channel": {
+      "label": "Salon",
+      "button": "Confirmer le salon"
+    },
+    "message": {
+      "label": "ID du message dans le salon définit",
+      "placeholder": "ID du message",
+      "help": {
+        "before": "Pour obtenir l'ID du message regardez ",
+        "after": "ici"
+      },
+      "button": "Ajouter cet ID de message"
+    },
+    "add": {
+      "label": "Ajout d'un Role",
+      "emoji": "Réaction/Emoji",
+      "notice": "Seulement des émojis personnalisés présents sur le serveur.<br>Si vous souhaitez utiliser des émojis réguliers, rentrez la commande d'ajout sur votre serveur s'il vous plaît."
+    },
+    "del": {
+      "label": "Supprimer le rôle"
+    },
+    "list": {
+      "label": "Liste des rôles",
+      "role": "Role",
+      "emoji": "Réaction/Emoji"
+    }
+  },
+  "alerts": {
+    "success": {
+      "channel": "Salon configuré!",
+      "message": "Message ajouté!",
+      "add": "Rôle ajouté!",
+      "del": "Rôle retiré!"
+    },
+    "error": {
+      "unknown": "Erreur inconnue",
+      "umessage": "ID de message inconnu"
+    }
+  }
+}
