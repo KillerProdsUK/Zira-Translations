@@ -64,7 +64,7 @@ module.exports = {
   },
   toggle: {
     help: 'toggle [emoji] [@role | role name]** ~~-~~ add a role with an emoji to the message set',
-    image: 'https://stuff.zira.pw/files/1524890971185.gif', /* I will replace this with a gif that is fast as my internet and laptop is slow */
+    image: 'https://stuff.zira.pw/files/1524932965273.gif', /* I will replace this with a gif that is fast as my internet and laptop is slow */
   },
   perm: {
     noPerm: 'You need be the owner of the guild, or have the `MANAGE_ROLES` perm to use these commands.',
