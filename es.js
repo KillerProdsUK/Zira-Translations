@@ -36,6 +36,8 @@ module.exports = {
       maybe: 'set a suggestion as a potentially approved suggestion\n',
       deny: 'set a suggestion as a denied suggestion\n',
       once: 'add a role that can be claimed once\n',
+      calc: 'calculator\n',
+      purge: 'purge up to 100 messages\n',
     },
     categories: {
       role: 'Roles',
@@ -77,6 +79,7 @@ module.exports = {
     noPerm: 'Tienes que ser el dueño del servidor o tener el permiso `Administrar Roles` para usar estos comandos.',
     noLangPerm: 'Tienes que ser el dueño del servidor o tener el permiso `Administrar Servidor` para cambiar el lenguaje del bot.',
     noGuildPerm: 'Tienes que ser el dueño del servidor o tener el permiso `Administrar Servidor` para usar este comando.',
+    noMessagePerm: 'You need be the owner of the guild, or have the `MANAGE_MESSAGES` permission to purge messages.',
   },
   lang: {
     langUpdate: 'Idioma actualizado.',
@@ -175,12 +178,15 @@ module.exports = {
     edited: 'El mensaje fue editado.',
   },
   suggestion: {
-    help: ['suggestion #channel** ~~-~~ set a channel that suggestions will be sent to\n\nTo disable suggestions, do **', 'suggestion stop**'],
+    help: ['suggestion #channel** ~~-~~ set a channel that suggestions will be sent to\nIf you want to only allow suggestions to be submited in one channel do **', 'suggestion [#suggestion channel] [#submit channel]**\n\nTo disable suggestions, do **', 'suggestion stop**'],
     set: ['Suggestion channel set to <#', '>\n\n**NOTE:** If Zira is not able to send to the channel, suggestions will be disabled.'],
+    setsubmit: ['Suggestion channel set to <#', '> and suggestions can only be submitted in <#', '>\n\n**NOTE:** If Zira is not able to send to the channel, suggestions will be disabled.'],
     stop: 'Suggestion are now disabled.',
     disable: 'Suggestions are disabled.',
     notSetup: 'That message is not a suggestion sent by Zira.',
     reason: 'Reason',
+    useChannel: ['Use the channel <#', '> to submit a suggestion.'],
+    noReason: 'No reason was provided.',
   },
   submit: {
     help: 'submit [suggestion]** ~~-~~ submit your wonderful suggestion',
@@ -213,5 +219,10 @@ module.exports = {
     set: ['<@&', '> added with the emoji ', '\n\n**NOTE:** The `Zira` role needs to be above the role you\'ve set and needs to have `Manage Roles` permission to give this role.'],
     emoji: 'That emoji is already in use on this message.',
     role: 'That role is already in use on this message.',
+  },
+  purge: {
+    amount: 'You didn\'t inout an amount of messages.',
+    wrongAmount: 'The amount of messages can only be between 2 - 100.',
+    error: 'Couldn\'t purge messages.',
   },
 };

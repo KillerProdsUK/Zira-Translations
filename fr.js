@@ -36,6 +36,8 @@ module.exports = {
       maybe: 'approbation en suggestion potentielle(peut-être)\n',
       deny: 'refus d\'une suggestion\n',
       once: 'ajout d\'un rôle ne pouvant être ajouté qu\'une seule fois\n',
+      calc: 'calculator\n',
+      purge: 'purge up to 100 messages\n',
     },
     categories: {
       role: 'Rôles',
@@ -76,7 +78,8 @@ module.exports = {
   perm: {
     noPerm: 'Vous devez être le propriétaire du serveur ou posséder la permission `Gérer les rôles` pour utiliser ces commandes.',
     noLangPerm: 'Vous devez être le propriétaire du serveur ou posséder la permission `Gérer le Serveur` pour modifier la langue du bot.',
-    noGuildPerm: 'Vous devez être le propriétaire du serveur ou devez posséder la permission `Gérer le serveur` pour utiliser cette commande.'
+    noGuildPerm: 'Vous devez être le propriétaire du serveur ou devez posséder la permission `Gérer le serveur` pour utiliser cette commande.',
+    noMessagePerm: 'You need be the owner of the guild, or have the `MANAGE_MESSAGES` permission to purge messages.',
   },
   lang: {
     langUpdate: 'La langue a été mise à jour.',
@@ -95,25 +98,25 @@ module.exports = {
     title: 'Foire Aux Questions',
     fields: [{
       name: 'Lorsque je rentre une commande Zira ne répond pas',
-      value: 'Veuillez vérifier que Zira a les permissions `Intégrer des liens` et `Envoyer des messages` dans le salon où vous rentrez les commandes.'
+      value: 'Veuillez vérifier que Zira a les permissions `Intégrer des liens` et `Envoyer des messages` dans le salon où vous rentrez les commandes.',
     }, {
       name: 'Zira vous dit "Impossible de trouver le message correspondant à cet ID" ou que l\'ID du message est inconnu" que faire?',
-      value: 'Veuillez vérifier que l\'ID du message se trouve bien dans le salon que vous avez configuré et que Zira possède la permission de voir ce salon.'
+      value: 'Veuillez vérifier que l\'ID du message se trouve bien dans le salon que vous avez configuré et que Zira possède la permission de voir ce salon.',
     }, {
       name: 'Zira ne donne pas les rôles alors que vous avez tout configuré?',
-      value: 'Veuillez vérifier que Zira a la permission `Gérer les rôles` et que le rôle de Zira est placé au-dessus des rôles configurés que Zira doit donner.'
+      value: 'Veuillez vérifier que Zira a la permission `Gérer les rôles` et que le rôle de Zira est placé au-dessus des rôles configurés que Zira doit donner.',
     }, {
       name: 'Est-ce que Zira peut retirer les émojis/réactions n\'étant associés à aucun rôle que Zira doit donner?',
-      value: 'Oui, il vous suffit de donner la permission `Gérer les messages` à Zira dans le salon.'
+      value: 'Oui, il vous suffit de donner la permission `Gérer les messages` à Zira dans le salon.',
     }, {
       name: 'Zira peut-il gérer plus d\'un message à la fois?',
-      value: 'Oui, il vous suffit de configurer un autre message et d\'ajouter les rôles sur celui-ci.'
+      value: 'Oui, il vous suffit de configurer un autre message et d\'ajouter les rôles sur celui-ci.',
     }, {
       name: 'Zira peut-il gérer plus d\'un salon à la fois?',
-      value: 'Oui, il vous suffit de configurer un autre salon, puis le message, etc.'
+      value: 'Oui, il vous suffit de configurer un autre salon, puis le message, etc.',
     }, {
       name: 'Combien de rôles peut contenir un message?',
-      value: 'Discord limite à 20 émojis/réactions à la fois par message, donc 20 rôles au maximum.'
+      value: 'Discord limite à 20 émojis/réactions à la fois par message, donc 20 rôles au maximum.',
     }],
   },
   join: {
@@ -175,12 +178,15 @@ module.exports = {
     edited: 'Le message a été édité.',
   },
   suggestion: {
-    help: ['suggestion #channel** ~~-~~ définit le salon dans lequel les suggestions seront postées\n\nPour désactiver les suggestions, faites la commande **', 'suggestion stop**'],
+    help: ['suggestion #channel** ~~-~~ set a channel that suggestions will be sent to\nIf you want to only allow suggestions to be submited in one channel do **', 'suggestion [#suggestion channel] [#submit channel]**\n\nTo disable suggestions, do **', 'suggestion stop**'],
     set: ['Salon des suggestions définit à <#', '>\n\n**NOTE:** Si Zira n\'a pas la permission `Envoyer des messages` alors les suggestions seront désactivées.'],
+    setsubmit: ['Suggestion channel set to <#', '> and suggestions can only be submitted in <#', '>\n\n**NOTE:** If Zira is not able to send to the channel, suggestions will be disabled.'],
     stop: 'Les suggestions sont désormais désactivées.',
     disable: 'Les suggestions sont désactivées.',
     notSetup: 'Ce message n\'est pas une suggestion envoyée par Zira..',
     reason: 'Raison',
+    useChannel: ['Use the channel <#', '> to submit a suggestion.'],
+    noReason: 'No reason was provided.',
   },
   submit: {
     help: 'submit [suggestion]** ~~-~~ proposer votre magnifique suggestion',
@@ -213,5 +219,10 @@ module.exports = {
     set: ['<@&', '> a été ajouté avec l\'émoji ', '\n\n**NOTE:** Le rôle `Zira` doit se situer au-dessus du rôle configuré et doit posséder la permission `Gérer les rôlesRoles` pour pouvoir donner ce rôle.'],
     emoji: 'Cet émoji est déjà utilisé sur ce message.',
     role: 'Ce rôle est déjà utilisé sur ce message.',
+  },
+  purge: {
+    amount: 'You didn\'t inout an amount of messages.',
+    wrongAmount: 'The amount of messages can only be between 2 - 100.',
+    error: 'Couldn\'t purge messages.',
   },
 };
