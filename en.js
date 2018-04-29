@@ -35,6 +35,7 @@ module.exports = {
       approve: 'set a suggestion as an approved suggestion\n',
       maybe: 'set a suggestion as a potentially approved suggestion\n',
       deny: 'set a suggestion as a denied suggestion\n',
+      once: 'add a role that can be claimed once',
     },
     categories: {
       role: 'Roles',
@@ -203,5 +204,14 @@ module.exports = {
     read: ['Unable to potentially approve the suggestion in <#', '> because I lack the `Read Messages` or `Read Message History` permission.'],
     title: 'Potential Suggestion',
     unknown: 'Unable to potentially approve suggestion.',
+  },
+  once: {
+    help: 'once [emoji] [@role | role name]** ~~-~~ add a role with an emoji that can be claimed only once to the message set\n\nThis is useful for accepting guild rules, etc.',
+    cannotRead: ['Unable to react to the message in <#', '> because I lack the `Read Messages` or `Read Message History` permission.'],
+    cannotReact: ['Unable to react to the message in <#', '> because I lack the `Add Reaction` permission.'],
+    unknown: 'Unable to react to the message in <#',
+    set: ['<@&', '> added with the emoji ', '\n\n**NOTE:** The `Zira` role needs to be above the role you\'ve set and needs to have `Manage Roles` permission to give this role.'],
+    emoji: 'That emoji is already in use on this message.',
+    role: 'That role is already in use on this message.',
   },
 };
