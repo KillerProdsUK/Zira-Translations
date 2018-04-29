@@ -35,7 +35,7 @@ module.exports = {
       approve: 'set a suggestion as an approved suggestion\n',
       maybe: 'set a suggestion as a potentially approved suggestion\n',
       deny: 'set a suggestion as a denied suggestion\n',
-      once: 'add a role that can be claimed once',
+      once: 'add a role that can be claimed once\n',
     },
     categories: {
       role: 'Roles',
