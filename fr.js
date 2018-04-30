@@ -36,8 +36,8 @@ module.exports = {
       maybe: 'approbation en suggestion potentielle(peut-être)\n',
       deny: 'refus d\'une suggestion\n',
       once: 'ajout d\'un rôle ne pouvant être ajouté qu\'une seule fois\n',
-      calc: 'calculator\n',
-      purge: 'purge up to 100 messages\n',
+      calc: 'calculatrice\n',
+      purge: 'supprimer jusqu\'à 100 messages\n',
     },
     categories: {
       role: 'Rôles',
@@ -79,7 +79,7 @@ module.exports = {
     noPerm: 'Vous devez être le propriétaire du serveur ou posséder la permission `Gérer les rôles` pour utiliser ces commandes.',
     noLangPerm: 'Vous devez être le propriétaire du serveur ou posséder la permission `Gérer le Serveur` pour modifier la langue du bot.',
     noGuildPerm: 'Vous devez être le propriétaire du serveur ou devez posséder la permission `Gérer le serveur` pour utiliser cette commande.',
-    noMessagePerm: 'You need be the owner of the guild, or have the `MANAGE_MESSAGES` permission to purge messages.',
+    noMessagePerm: 'Vous devez être le propriétaire du serveur ou devez posséder la permission `Gérer les messages` pour supprimer des messages.',
   },
   lang: {
     langUpdate: 'La langue a été mise à jour.',
@@ -178,15 +178,15 @@ module.exports = {
     edited: 'Le message a été édité.',
   },
   suggestion: {
-    help: ['suggestion #channel** ~~-~~ set a channel that suggestions will be sent to\nIf you want to only allow suggestions to be submited in one channel do **', 'suggestion [#suggestion channel] [#submit channel]**\n\nTo disable suggestions, do **', 'suggestion stop**'],
+    help: ['suggestion #channel** ~~-~~ définit le salon dans lequel les suggestions seront postées\nSi vous voulez que les suggestions ne soient envoyées uniquement à travers **un salon** alors faites la commande **', 'suggestion [#salon de réception des suggestions] [#salon d\'envoi des suggestions]**\n\nPour désactiver les suggestions faites la commande **', 'suggestion stop**'],
     set: ['Salon des suggestions définit à <#', '>\n\n**NOTE:** Si Zira n\'a pas la permission `Envoyer des messages` alors les suggestions seront désactivées.'],
-    setsubmit: ['Suggestion channel set to <#', '> and suggestions can only be submitted in <#', '>\n\n**NOTE:** If Zira is not able to send to the channel, suggestions will be disabled.'],
+    setsubmit: ['Salon des suggestions définit à <#', '> et les suggestions ne pourront seulement être envoyées dans <#', '>\n\n**NOTE:** Si Zira n\'a pas la permission `Envoyer des messages` alors les suggestions seront désactivées.'],
     stop: 'Les suggestions sont désormais désactivées.',
     disable: 'Les suggestions sont désactivées.',
-    notSetup: 'Ce message n\'est pas une suggestion envoyée par Zira..',
+    notSetup: 'Ce message n\'est pas une suggestion envoyée par Zira.',
     reason: 'Raison',
-    useChannel: ['Use the channel <#', '> to submit a suggestion.'],
-    noReason: 'No reason was provided.',
+    useChannel: ['Utilisez le salon <#', '> pour proposer une suggestion.'],
+    noReason: 'Aucune raison n\'a été fournit.',
   },
   submit: {
     help: 'submit [suggestion]** ~~-~~ proposer votre magnifique suggestion',
@@ -221,8 +221,8 @@ module.exports = {
     role: 'Ce rôle est déjà utilisé sur ce message.',
   },
   purge: {
-    amount: 'You didn\'t inout an amount of messages.',
-    wrongAmount: 'The amount of messages can only be between 2 - 100.',
-    error: 'Couldn\'t purge messages.',
+    amount: 'Vous n\'avez pas spécifié un nombre de messages.',
+    wrongAmount: 'Le nombre de messages ne peut qu\'être entre 1 et 100.',
+    error: 'Je n\'ai pas pu supprimer les messages.',
   },
 };
