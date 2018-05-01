@@ -62,7 +62,9 @@
     },
     "error": {
       "unknown": "Error Desconocido",
-      "umessage": "ID de Mensaje Desconocido"
+      "umessage": "ID de Mensaje Desconocido",
+      "channel": "Please set a channel first",
+      "nomessage": "Please set a message first"
     }
   }
 }
