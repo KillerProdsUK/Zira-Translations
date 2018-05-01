@@ -63,8 +63,8 @@
     "error": {
       "unknown": "Erreur inconnue",
       "umessage": "ID de message inconnu",
-      "channel": "Please set a channel first",
-      "nomessage": "Please set a message first"
+      "channel": "Veuillez tout d'abord configurer un salon",
+      "nomessage": "Veuillez tout d'abord configurer un message"
     }
   }
 }
