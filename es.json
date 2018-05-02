@@ -42,7 +42,7 @@
     "add": {
       "label": "Añadir Rol",
       "emoji": "Emoji",
-      "notice": "Solo emojis personalizados del servidor. <br>Si quieres usar emojis comunes por favor usa el comando z/role add en tu servidor."
+      "notice": "Solo emojis personalizados del servidor. <br>Si quieres usar emojis comunes por favor usa el comando z/add en tu servidor."
     },
     "del": {
       "label": "Remover Rol"
@@ -63,8 +63,8 @@
     "error": {
       "unknown": "Error Desconocido",
       "umessage": "ID de Mensaje Desconocido",
-      "channel": "Please set a channel first",
-      "nomessage": "Please set a message first"
+      "channel": "Por favor establece un canal primero",
+      "nomessage": "Por favor establece un mensaje primero"
     }
   }
 }
