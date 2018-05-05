@@ -68,22 +68,22 @@ module.exports = {
     cannotReact: ['Niet in staat om te reageren op het bericht in <#', '> omdat ik niet over de machtiging `Reactie toevoegen`.'],
     unknown: 'Niet in staat om te reageren op het bericht in <#',
     set: ['<@&', '> met de emoji toegevoegd', '\n\n**OPMERKING:** de rol `Zira` moet boven de rol die u hebt ingesteld, en moet beschikken over de machtiging `Rollen beheren` om deze rol te geven.'],
-    emoji: 'That emoji is already in use on this message.',
-    role: 'That role is already in use on this message.',
+    emoji: 'Dat emoji is al in gebruik op dit bericht.',
+    role: 'Die rol is al in gebruik op dit bericht.',
   },
   toggle: {
-    help: 'toggle [emoji] [@role | role name]** ~~-~~ add a role with an emoji to the set message',
-    image: 'https://stuff.zira.pw/files/1524932965273.gif', /* I will replace this with a gif that is fast as my internet and laptop is slow */
+    help: 'toggle [emoji] [@role | role name]** ~~-~~ een rol met een emoji toevoegen aan het bericht instellen',
+    image: 'https://stuff.zira.pw/files/1524932965273.gif', /* Ik zal dit vervangen door een gif dat is snel als mijn internet en laptop is traag */
   },
   perm: {
-    noPerm: 'You need be the owner of the guild, or have the `MANAGE_ROLES` perm to use these commands.',
-    noLangPerm: 'You need be the owner of the guild, or have the `MANAGE_GUILD` perm to change the bot\'s language.',
-    noMessagePerm: 'You need be the owner of the guild, or have the `MANAGE_MESSAGES` permission to purge messages.',
-    noGuildPerm: 'You need be the owner of the guild, or have the `MANAGE_GUILD` permission to use this command.',
+    noPerm: 'U moet de eigenaar van de gilde, of de `MANAGE_ROLES` permanent als deze opdrachten wilt gebruiken.',
+    noLangPerm: 'U moet de eigenaar van de gilde of hebben de `MANAGE_GUILD` permanent de bot taal wijzigen.',
+    noMessagePerm: 'U moet de eigenaar van de gilde of beschikken over de machtiging `MANAGE_MESSAGES` berichten verwijderen.',
+    noGuildPerm: 'U moet de eigenaar van de gilde of beschikken over de machtiging `MANAGE_GUILD` gebruik van deze opdracht.',
   },
   lang: {
-    langUpdate: 'Language updated.',
-    translate: 'If you want Zira in a language that isn\'t on the list above,\nyou can help translate it [here](https://github.com/HazedSPaCEx/Zira-Translations)',
+    langUpdate: 'Taal bijgewerkt.',
+    translate: 'Als u wilt dat Zira in een taal die niet op de bovenstaande lijst,\nu kunt helpen vertalen [hier](https://github.com/HazedSPaCEx/Zira-Translations)',
   },
   log: {
     title: 'Log Command',
