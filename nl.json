@@ -1,1 +1,70 @@
-
+{
+  "nav": {
+    "invite": "Uitnodigen",
+    "support": "Ondersteuning",
+    "donate": "Doneren",
+    "guide": "Gids",
+    "servers": "Servers",
+    "noservers": "Geen Servers",
+    "login": "Login",
+    "logout": "Uitloggen",
+    "language": "Taal"
+  },
+  "home": {
+    "about": {
+      "title": "Over Zira",
+      "description": "Zira gebruikers mogen geven of rollen uit de buurt van zichzelf door simpelweg reageren of unreacting om de setup bericht(en) te nemen."
+    },
+    "features": {
+      "title": "Functies",
+      "description": "Meerdere berichten<br>Meerdere kanalen<br>Kundig voor toepassing geen rol<br>Autorole op gebruiker of bot join <small>(opdracht setup alleen)</small><br>Kundig voor toepassing van aangepaste of regelmatige emojis<br>Word lid van berichten <small>(opdracht setup alleen)</small>"
+    },
+    "demo": "Proefversie"
+  },
+  "server": {
+    "header": {
+      "title": "Beheren",
+      "description": "OPMERKING: U hoeft niet te wijzigen van elk veld elke keer."
+    },
+    "channel": {
+      "label": "Kanaal",
+      "button": "Set Kanaal"
+    },
+    "message": {
+      "label": "Bericht-ID in geselecteerde kanaal",
+      "placeholder": "Bericht-ID",
+      "help": {
+        "before": "Om een bericht ID volgen ",
+        "after": "deze"
+      },
+      "button": "Bericht-ID toevoegen"
+    },
+    "add": {
+      "label": "Functie toevoegen",
+      "emoji": "Emoji",
+      "notice": "Alleen aangepaste emojis vanaf de server. <br>Als u gebruik wilt maken regelmatig gebruik emojis de opdracht add in uw server."
+    },
+    "del": {
+      "label": "Verwijder rol"
+    },
+    "list": {
+      "label": "Lijst van de rol",
+      "role": "Rol",
+      "emoji": "Emoji"
+    }
+  },
+  "alerts": {
+    "success": {
+      "channel": "Kanaal instellen",
+      "message": "Bericht toegevoegd",
+      "add": "Rol toegevoegd",
+      "del": "Rol verwijderd"
+    },
+    "error": {
+      "unknown": "Onbekende fout",
+      "umessage": "Onbekend bericht-ID",
+      "channel": "Stel eerst een kanaal",
+      "nomessage": "Stel een bericht eerst"
+    }
+  }
+}
